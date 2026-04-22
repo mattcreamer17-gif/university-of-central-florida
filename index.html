@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For the UCF Institute of Artificial Intelligence | Prepared for eMerge Americas 2026</title>
+<meta name="description" content="Matt Creamer, Eduba. Saw UCF at 1110 and had to stop by. Jake has been reading the IAI's output this year.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="masthead__brand" href="#">
+      <img src="logo.svg" alt="University of Central Florida" />
+    </a>
+    <nav class="masthead__meta" aria-label="Page meta">
+      <span class="meta-item">eMerge Americas 2026</span>
+      <span class="meta-sep" aria-hidden="true">/</span>
+      <span class="meta-item">Booth 1110</span>
+      <span class="meta-sep" aria-hidden="true">/</span>
+      <span class="meta-item">Peer Brief</span>
+    </nav>
+  </div>
+  <div class="masthead__rule" aria-hidden="true"></div>
+</header>
+
+<section class="hero">
+  <div class="hero__grid">
+    <div class="hero__kicker">
+      <span class="tag">Prepared for</span>
+      <span class="tag tag--gold">UCF Institute of Artificial Intelligence</span>
+    </div>
+    <h1 class="hero__title">
+      A read on where <span class="gold">context architecture</span> sits in the IAI stack, and where it does not.
+    </h1>
+    <p class="hero__sub">
+      A peer note from Eduba ahead of your eMerge Americas booth. The Wang group and the CRCV
+      are formalizing multi-agent topology. There is a layer above that which is still open.
+      ICM is a proposal for how to occupy it.
+    </p>
+    <div class="hero__cta">
+      <a class="cta" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">
+        <span class="cta__label">Book 30 minutes with Matt Creamer</span>
+        <span class="cta__arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <p class="cta__sub">Matt Creamer, CRO, Eduba. No pitch attached. Peer conversation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="marquee" aria-label="Institutional context">
+  <div class="marquee__inner">
+    <div class="marquee__stat">
+      <div class="stat__num">23</div>
+      <div class="stat__label">IAI-affiliated papers accepted to ICLR 2026</div>
+    </div>
+    <div class="marquee__stat">
+      <div class="stat__num">#11</div>
+      <div class="stat__label">CSRankings, computer vision, CRCV</div>
+    </div>
+    <div class="marquee__stat">
+      <div class="stat__num">$3.5B</div>
+      <div class="stat__label">Go For Launch, with AI as a named pillar</div>
+    </div>
+    <div class="marquee__stat">
+      <div class="stat__num">68k+</div>
+      <div class="stat__label">Students inside the AI for All rollout</div>
+    </div>
+  </div>
+</section>
+
+<section class="pitch">
+  <div class="pitch__wrap">
+    <div class="pitch__label">
+      <span class="pitch__num">01</span>
+      <span class="pitch__name">The Pitch Body</span>
+    </div>
+    <div class="pitch__body">
+      <p class="pitch__lede">
+        Matt Creamer, Eduba. Saw UCF at 1110 and had to stop by. Jake, my colleague, has been
+        reading the IAI's output this year. The 23 ICLR papers, the ALM multilingual benchmark,
+        and the AnyMAC multi-agent work out of the Wang group.
+      </p>
+      <p>
+        There is a piece of the stack Jake wrote a paper on, Interpretable Context Methodology
+        (<a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">ACM TiiS submission</a>),
+        that sits structurally above what AnyMAC is solving: how the agents' context and identity are organized
+        before the topology question shows up. Worth comparing notes.
+      </p>
+      <p>
+        If it lands with the right person at UCF, I can put 30 minutes with Matt on the calendar.
+        <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Calendar link here</a>.
+        No pitch attached. Peer conversation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="layers" aria-label="Where ICM sits">
+  <div class="layers__wrap">
+    <div class="layers__head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">One layer up from AnyMAC.</h2>
+      <p class="section-sub">
+        Wang's AnyMAC treats multi-agent topology as iterative prediction. ICM treats the context
+        and identity structure each agent carries before any topology assembles. The two are
+        complementary and, as far as we can read, not yet in conversation with each other.
+      </p>
+    </div>
+    <ol class="layers__stack">
+      <li class="layer">
+        <div class="layer__meta"><span class="layer__tag">L0</span><span class="layer__role">Identity</span></div>
+        <div class="layer__desc">Who the agent is. Role, constraints, refusal posture.</div>
+      </li>
+      <li class="layer">
+        <div class="layer__meta"><span class="layer__tag">L1</span><span class="layer__role">Domain</span></div>
+        <div class="layer__desc">Working knowledge of the field the agent operates inside.</div>
+      </li>
+      <li class="layer">
+        <div class="layer__meta"><span class="layer__tag">L2</span><span class="layer__role">Procedure</span></div>
+        <div class="layer__desc">Contracts and stage definitions. What "done" looks like per phase.</div>
+      </li>
+      <li class="layer">
+        <div class="layer__meta"><span class="layer__tag">L3</span><span class="layer__role">Factory</span></div>
+        <div class="layer__desc">Reusable patterns. The reference layer other agents compose against.</div>
+      </li>
+      <li class="layer">
+        <div class="layer__meta"><span class="layer__tag">L4</span><span class="layer__role">Working</span></div>
+        <div class="layer__desc">Run-specific artifacts. The output the topology produces.</div>
+      </li>
+    </ol>
+    <p class="layers__foot">
+      Repo (MIT license):
+      <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>.
+      52-member practitioner community. U-shaped edit pattern observed across long runs.
+    </p>
+  </div>
+</section>
+
+<section class="tracks" aria-label="Three conversations, one booth">
+  <div class="tracks__wrap">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Three conversations, one booth.</h2>
+    <p class="section-sub">
+      The booth staff decides which one we are actually having. The rest stays in the folder.
+    </p>
+    <div class="tracks__grid">
+      <article class="track">
+        <header class="track__head">
+          <span class="track__label">Track A</span>
+          <h3 class="track__title">Research collaboration</h3>
+        </header>
+        <p class="track__body">
+          For the IAI and the Wang group. ICM as a peer methodology. The conversation is
+          co-authorship, benchmark exchange, and whether the L0 through L4 structure holds up
+          under the kind of multi-agent loads CRCV already stresses.
+        </p>
+        <p class="track__proof">
+          Precedent: Edinburgh / UKICER academic collaboration. Research-grade rigor.
+        </p>
+      </article>
+      <article class="track">
+        <header class="track__head">
+          <span class="track__label">Track B</span>
+          <h3 class="track__title">AI for All, at scale</h3>
+        </header>
+        <p class="track__body">
+          For the Provost's office. The question is not content. It is how fluency outcomes
+          get measured across ~68,000 students and the faculty and staff inside Workday.
+          Eduba has been running enterprise cohort training through Correlation One, with
+          1,500+ trained since May 2025. The methodology transfers.
+        </p>
+        <p class="track__proof">
+          Analog: KPMG UK, one of the Big Four. 40+ executives trained.
+        </p>
+      </article>
+      <article class="track">
+        <header class="track__head">
+          <span class="track__label">Track C</span>
+          <h3 class="track__title">Governance, operationalized</h3>
+        </header>
+        <p class="track__body">
+          For the Center for Ethics and the lifecycle-governance thread already running
+          inside UCF STARS. Eduba built the
+          <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">Ethics Engine</a>,
+          a psychometric assessment tool for evaluating ideological and moral patterns in LLMs.
+          Code on
+          <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+        <p class="track__proof">
+          Relevant when the conversation turns to bias, refusal, or regulated-industry evaluation.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="why" aria-label="Why us">
+  <div class="why__wrap">
+    <span class="section-num">04</span>
+    <h2 class="section-title">A short account of who is writing this.</h2>
+    <div class="why__grid">
+      <div class="why__col">
+        <h3 class="why__sub">Eduba</h3>
+        <p>
+          Veteran-owned AI consulting firm. Computational orchestration. Deciding which layer
+          each piece of a problem belongs on. Consulting, bespoke builds, training, and partnership.
+          SAM-registered, veteran-owned certification in progress.
+        </p>
+      </div>
+      <div class="why__col">
+        <h3 class="why__sub">Jake Van Clief</h3>
+        <p>
+          CEO. Marine Corps veteran (cryptographic systems, F-35/F-18 avionics).
+          MSc Future Governance, University of Edinburgh. Published in ACM TiiS (ICM),
+          arXiv (Ethics Engine), and Saints Academic Review.
+        </p>
+      </div>
+      <div class="why__col">
+        <h3 class="why__sub">Infrastructure</h3>
+        <p>
+          For work that sits below the orchestration layer, Eduba partners with NLP Logix.
+          NLP Logix has been in machine learning since 2011 and runs over 150 data scientists.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="cta-final__wrap">
+    <p class="cta-final__eyebrow">Next step</p>
+    <h2 class="cta-final__title">
+      Thirty minutes with <span class="gold">Matt Creamer</span>. Calendar link below.
+    </h2>
+    <p class="cta-final__body">
+      Bring one question the IAI has not yet answered publicly. Or one workflow the Provost's
+      office has not yet figured out how to measure. Either is a good starting point.
+    </p>
+    <a class="cta cta--large" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">
+      <span class="cta__label">calendly.com/thecro-eduba/30min</span>
+      <span class="cta__arrow" aria-hidden="true">&rsaquo;</span>
+    </a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__wrap">
+    <div class="foot__col">
+      <p class="foot__mark">Charge On.</p>
+      <p class="foot__fine">
+        This page was prepared for UCF's eMerge Americas 2026 presence at Booth 1110. UCF
+        marks and identity are used here for brief-preparation purposes only. Official UCF
+        brand assets are licensed through ucf.edu/brand.
+      </p>
+    </div>
+    <div class="foot__col foot__col--right">
+      <p class="foot__prepared">Prepared by Eduba</p>
+      <p class="foot__fine">
+        <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a>
+        &nbsp;&nbsp;/&nbsp;&nbsp;
+        Matt Creamer, CRO
+        &nbsp;&nbsp;/&nbsp;&nbsp;
+        <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 min</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
